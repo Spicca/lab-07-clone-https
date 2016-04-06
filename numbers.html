@@ -4,14 +4,18 @@
 
 <script type="text/javascript">
 
+function float2int (numb) {
+    return numb | 0;
+}
+
 var numb=prompt("Please enter a number: ")
 console.log("Your number is: ")
 console.log(numb)
-int thousands = (numb-(numb%1000))/1000
-int hundreds = (numb%1000)/100
-int tens = (numb%100)/10
-int ones = (numb%10)
-console.log("Thousands: " + thousands + "\n" + "Hundreds: " + hundreds + "\n" + "Tens: " + tens + "\n" + "Ones: " + ones )
+thousands = (numb-(numb%1000))/1000
+hundreds = (numb%1000)/100
+tens = (numb%100)/10
+ones = (numb%10)
+console.log("Thousands: " + parseInt(thousands) + "\n" + "Hundreds: " + parseInt(hundreds) + "\n" + "Tens: " + parseInt(tens) + "\n" + "Ones: " + parseInt(ones) )
 </script>
 
 
